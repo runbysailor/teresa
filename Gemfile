@@ -2,9 +2,6 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
 gem 'flickraw', '0.8.4'
-gem 'picasa', '0.2.2'
-gem 'devise', '1.1.5'
-gem 'paperclip', '2.3.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
