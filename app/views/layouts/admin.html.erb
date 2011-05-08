@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Teresa Alcorn</title>
+		<%= stylesheet_link_tag 'application' %>
+		<%= csrf_meta_tag %>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+        <span class="title" style="color:#600000;">Admin</span>
+        <div id="messages">
+          <span class="notice"><%= notice %></span>
+         	<span class="alert"><%= alert %></span>
+        </div>
+			</div>
+      <div id="midder">        
+				<%= yield %>          
+			</div>
+			<div id="footer">
+				<br />
+				<div class="contact">
+					<br />
+					&copy;2010-2011 Teresa Alcorn. All rights reserved.
+					<br />
+					<br />
+					<%= link_to 'Run by sailoR', 'http://runbysailor.com' %>
+          <br />
+          <br />
+          <% if logged_in? %>
+            <%= link_to 'Admin', admin_path %> | <%= link_to 'Logout', logout_path %>
+          <% else %>
+            <%= link_to 'Admin', auth_url %>
+          <% end %>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

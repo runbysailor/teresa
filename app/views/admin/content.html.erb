@@ -1,0 +1,12 @@
+<div id="form">
+  <%= form_for(@content) do |f| %>
+    <%= f.hidden_field :id, :value => 1 %>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %><br />
+    <br />
+    <%= f.label :about %><br />
+    <%= f.text_area :about %><br />
+    <br />
+    <%= f.submit %>
+  <% end %>
+</div>

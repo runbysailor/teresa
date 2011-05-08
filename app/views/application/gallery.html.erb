@@ -1,0 +1,9 @@
+<div id="gallery">
+  <%= link_to 'Home', root_path %><br />
+  <br />
+  <% @photos.each do |p| %>
+    <div class="photo">
+      <%= link_to image_tag(FlickRaw.url_s(p)), FlickRaw.url_photopage(p) %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,14 @@
+<div id="frame">
+  <ul id="rotate">
+    <% @photos.each do |p| %>
+      <li><%= image_tag FlickRaw.url_z(p) %></li>
+    <% end %>
+  </ul>
+</div>
+<div id="form">
+  <%= link_to 'Gallery', gallery_path, :style => 'font-weight:bold;' %><br />
+  <br />
+  <%= @content.about %><br />
+  <br />
+  <%= @content.email %>
+</div>

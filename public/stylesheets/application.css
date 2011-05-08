@@ -1,0 +1,166 @@
+@font-face {
+	font-family: 'JosefinSlabRegular';
+	src: url('JosefinSlab-Regular-webfont.eot');
+	src: local('☺'), url('JosefinSlab-Regular-webfont.woff') format('woff'), url('JosefinSlab-Regular-webfont.ttf') format('truetype'), url('JosefinSlab-Regular-webfont.svg#webfont9kfqywMS') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PromocyjaMedium';
+	src: url('promocyja-webfont.eot');
+	src: local('☺'), url('promocyja-webfont.woff') format('woff'), url('promocyja-webfont.ttf') format('truetype'), url('promocyja-webfont.svg#webfontxRsQs3pG') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	font-family: 'JosefinSlabRegular', 'verdana', 'arial';
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+img {
+	border-style: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	border: none;
+}
+
+a:hover {
+	color: #A1C3DC;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+#header {
+	color: #000;
+	background: url('bg.png') repeat-x;
+	height: 240px;
+}
+
+.title {
+	font-family: 'PromocyjaMedium';
+	font-size: 100px;
+	margin: 100px 0 0 14%;
+	float: left;	
+}
+
+#messages {
+  float: left;
+  text-align: left;
+  padding: 170px 0 0 40px;
+}
+
+#midder {
+	overflow: hidden;
+	clear: both;
+	margin: 0 0 50px 0;
+	width: 100%;
+	line-height: 2.0em;
+}
+
+#frame {
+	float: left;
+	width: 700px;
+	height: 480px;
+	display: block;
+	border: none;
+	position: relative;
+	overflow: hidden;
+	margin: 0 0 0 100px;
+}
+
+#gallery {
+  clear: both;
+  margin: auto;
+  text-align: center;
+  padding: 0 37.5px;
+}
+
+.photo {
+  display: inline;
+  padding: 5px 0 5px 5px;
+}
+
+/* Rotate Image */
+
+#rotate	{ 
+	position: relative; 
+	margin: 0; 
+	padding: 0;
+}
+
+#rotate li	{
+	display: block;
+}
+
+#frame * {
+	text-decoration: none;
+}
+
+#content {
+	display: inline;
+	float: right;
+	margin: 0 10% 0 2%;
+	font-size: 14px;
+	width: 14%;
+}
+
+#form {
+	margin: 0 0 0 28%;
+  padding: 0 100px 0 0;
+	font-size: 14px;
+}
+
+.notice {
+	color: #A1C3DC;
+}
+
+.alert {
+	color: #F00;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h2, h2 a {
+	font-size: 16px;
+	color: #A19FA4;
+}
+
+#footer {
+	clear: both;
+	vertical-align: baseline;
+	border-top-style: solid;
+	border-width: 1px;
+	border-color: #A19FA4;
+	height: 120px;
+	background-color: #A1C3DC;
+	color: #fff;
+	font-size: 12px;
+}
+
+#footer a {
+	color: #fff;
+}
+
+#footer a:hover {
+	color: #A19FA4;
+}
+
+.contact {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
