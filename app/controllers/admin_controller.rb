@@ -10,7 +10,7 @@ class AdminController < ApplicationController
     @content = Content.first
     
     if @content.update_attributes(params[:content])
-      redirect_to(admin_path, :notice => "Content successfully updated.")
+      redirect_to(root_path, :notice => "Content successfully updated.")
     else
       render :action => "edit", :notice => "Something has gone terribly wrong."
     end
