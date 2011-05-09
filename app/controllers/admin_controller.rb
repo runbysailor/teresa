@@ -18,7 +18,7 @@ class AdminController < ApplicationController
     
   def confirm_account
     unless session[:username] == nil
-      if session[:username] == 'micahalcorn'
+      if session[:username] == 'teresaalcorn'
         @current_user = session[:userid]
       else
         session.delete(:username)
