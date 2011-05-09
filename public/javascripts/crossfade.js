@@ -78,7 +78,7 @@ function crossfade(opacity) {
 			fader(currentImage,opacity);
 			/* fader(previousImage,100-opacity); */
 			opacity += 1;
-			window.setTimeout("crossfade("+opacity+")", 3);
+			window.setTimeout("crossfade("+opacity+")", 0.03);
 		} else {
 			/* make the previous image - which is now covered by the current one fully - transparent */
 			fader(previousImage,0);
