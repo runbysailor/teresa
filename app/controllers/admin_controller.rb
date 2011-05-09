@@ -17,7 +17,7 @@ class AdminController < ApplicationController
   end
     
   def confirm_account
-    unless session[:username] == nil
+    if session[:username] == nil
       if session[:username] == 'teresaalcorn'
         @current_user = session[:userid]
       else
@@ -25,7 +25,9 @@ class AdminController < ApplicationController
         session.delete(:userid)
         logger.info("User #{session[:username]} logged out")
         redirect_to(root_path, :notice => "You must be my mom.")    
-      end      
+      end
+    else
+      redirect_to(root_path, :notice => "Please sign in with Flickr.")
     end
   end
 end
